@@ -972,7 +972,7 @@ class PHP_ParserGenerator_Data
      */
     private function tplt_open()
     {
-        $templatename = $this->parser_template ? $this->parser_template : dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . "Lempar.php";
+        $templatename = $this->parser_template ? $this->parser_template : dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . "Lempar.txt";
 
         $buf = $this->filenosuffix . '.lt';
         if (file_exists($buf) && is_readable($buf)) {
